@@ -1,3 +1,21 @@
 #icono{
     height: 10vh;
 }
+.redes-icon{
+    height: 2rem;
+    margin: 0 1rem;
+}
+.bg-footer{
+    background-color: rgb(44 46 47);
+}
+.bg-products{
+    background-image: url(https://kaeltia.com/wp-content/uploads/2023/06/productos-sostenibles-negocio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 34vh;
+    
+}
+#titulo-productos{
+    height: fit-content;
+    font-size: 4rem;
+}
