@@ -19,3 +19,6 @@
     height: fit-content;
     font-size: 4rem;
 }
+#floatingTextarea{
+    height: 180px;
+}
