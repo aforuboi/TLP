@@ -22,3 +22,8 @@
 #floatingTextarea{
     height: 180px;
 }
+#form{
+    background-image: url("https://png.pngtree.com/background/20220731/original/pngtree-green-recycle-picture-image_1899313.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
