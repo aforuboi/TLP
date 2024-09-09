@@ -1,3 +1,5 @@
+let Tipo = undefined;
+let Subtipo = undefined
 $(document).ready(function () {
     $("#products").hide();
     $("#form").hide();
@@ -29,7 +31,7 @@ $(document).ready(function () {
 
     });
 
-
+    
 
 
     $("#flexRadioDefault1").click(function () {
@@ -39,6 +41,9 @@ $(document).ready(function () {
         $("#vidrio").hide();
         $("#metales").hide();
         $("#electronicos").hide();
+        Tipo = "plastico"
+        Subtipo = undefined
+
     })
     $("#flexRadioDefault2").click(function () {
         $("#subtipo").show();
@@ -47,6 +52,9 @@ $(document).ready(function () {
         $("#vidrio").hide();
         $("#metales").hide();
         $("#electronicos").hide();
+        Tipo = "papel"
+        Subtipo = undefined
+
     })
     $("#flexRadioDefault3").click(function () {
         $("#subtipo").show();
@@ -55,6 +63,9 @@ $(document).ready(function () {
         $("#vidrio").show();
         $("#metales").hide();
         $("#electronicos").hide();
+        Tipo = "vidrio"
+        Subtipo = undefined
+
     })
     $("#flexRadioDefault4").click(function () {
         $("#subtipo").show();
@@ -63,6 +74,9 @@ $(document).ready(function () {
         $("#vidrio").hide();
         $("#metales").show();
         $("#electronicos").hide();
+        Tipo = "metales"
+        Subtipo = undefined
+
     })
     $("#flexRadioDefault5").click(function () {
         $("#subtipo").show();
@@ -71,52 +85,44 @@ $(document).ready(function () {
         $("#vidrio").hide();
         $("#metales").hide();
         $("#electronicos").show();
+        Tipo = "electronicos"
+        Subtipo = undefined
+
     })
+
+ 
 
     $("#btn-enviar").click(function () {
         //Revisar los select
-        console.log("oal")
+        if (Tipo != undefined) {
+            if (Subtipo != undefined) {
 
-        console.log($("#flexRadioDefault1:checked").val())
-        if ($("#flexRadioDefault1:checked").val() != undefined) {
-            if ($("#flexRadioDefault2:checked").val() != undefined) {
-                if ($("#flexRadioDefault3:checked").val() != undefined) {
-                    if ($("#flexRadioDefault4:checked").val() != undefined) {
-                        if ($("#flexRadioDefault5:checked").val() != undefined) {
+                //Revisar los input
+                if ($("#input-nombre").val().length > 0) {
+                    if ($("#input-correo").val().length > 0) {
+                        if ($("#input-direccion").val().length > 0) {
+                            if ($("#floatingTextarea").val().length > 0) {
+                                alert("Se guardó yupi!")
+                            }else{
+                                alert("Comentarios no puede estar vacío")
+                            }
                         }else{
-                            alert("Electronicos no puede estar vacío")
+                            alert("Direccion no puede estar vacío")
                         }
                     }else{
-                        alert("Metales no puede estar vacío")
+                        alert("Correo no puede estar vacío")
                     }
                 }else{
-                    alert("Vidrio no puede estar vacío")
+                    alert("Nombre no puede estar vacío")
                 }
             }else{
-                alert("Papel no puede estar vacío")
+                alert("Subtipo no puede estar vacío")
             }
         }else{
-            alert("Plastico no puede estar vacío")
+            alert("Tipo no puede estar vacío")
         }
 
-        //Revisar los input
-        if ($("#input-nombre").val().length > 0) {
-            if ($("#input-correo").val().length > 0) {
-                if ($("#input-direccion").val().length > 0) {
-                    if ($("#floatingTextarea").val().length > 0) {
-                        alert("Se guardó yupi!")
-                    }else{
-                        alert("Comentarios no puede estar vacío")
-                    }
-                }else{
-                    alert("Direccion no puede estar vacío")
-                }
-            }else{
-                alert("Correo no puede estar vacío")
-            }
-        }else{
-            alert("Nombre no puede estar vacío")
-        }
+
     })
 
 });
@@ -124,4 +130,8 @@ $(document).ready(function () {
 function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
-  }
+  }   
+function agregar(e){
+    Subtipo = e
+    console.log(Subtipo)
+}
