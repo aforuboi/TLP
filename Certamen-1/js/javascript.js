@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     });
 
-    
+
 
 
     $("#flexRadioDefault1").click(function () {
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
     })
 
- 
+
 
     $("#btn-enviar").click(function () {
         //Revisar los select
@@ -99,26 +99,26 @@ $(document).ready(function () {
 
                 //Revisar los input
                 if ($("#input-nombre").val().length > 0) {
-                    if ($("#input-correo").val().length > 0) {
+                    if ($("#input-correo").val().length > 0 && isEmail($("#input-correo").val()) == true) {
                         if ($("#input-direccion").val().length > 0) {
                             if ($("#floatingTextarea").val().length > 0) {
                                 alert("Se guardó yupi!")
-                            }else{
+                            } else {
                                 alert("Comentarios no puede estar vacío")
                             }
-                        }else{
+                        } else {
                             alert("Direccion no puede estar vacío")
                         }
-                    }else{
-                        alert("Correo no puede estar vacío")
+                    } else {
+                        alert("Correo invalido")
                     }
-                }else{
+                } else {
                     alert("Nombre no puede estar vacío")
                 }
-            }else{
+            } else {
                 alert("Subtipo no puede estar vacío")
             }
-        }else{
+        } else {
             alert("Tipo no puede estar vacío")
         }
 
@@ -128,10 +128,9 @@ $(document).ready(function () {
 });
 
 function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
-  }   
-function agregar(e){
+}
+function agregar(e) {
     Subtipo = e
-    console.log(Subtipo)
 }
