@@ -1,423 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script></head>
-    <body>
-    <div class="w-100">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container-fluid">
-              <a class="navbar-brand fs-1 text-success" href="#" id="select-h">
-                Tienda Verde
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nv ">
-                  <a class="nav-link d-inline" href="#" id="select-p">Productos</a>
-                  <a class="nav-link d-inline" href="#" id="select-f">Formulario</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        <div id="homepage" class="container-fluid">
-          <img src="https://www.pactoglobal-colombia.org/images/jch-optimize/ng/images_NoticiasHome_2023_PORTS__e5e35.webp" class="w-100" alt="">
-            <h1 class="text-center fs-1 my-5">¿QUIÉNES SOMOS NOSOTROS?</h1>
-            <div class="row">
-                <div class="col-md-6 col-12 px-5 my-2">
-                  <p>
-                    En Tienda Verde, somos una pequeña empresa local apasionada por el cuidado del planeta. Nos dedicamos a ofrecer productos ecológicos y sostenibles que promueven un estilo de vida más consciente y respetuoso con el medio ambiente. Nuestra misión es proporcionar alternativas responsables que ayuden a reducir el impacto ambiental, fomentando el uso de materiales reciclados, orgánicos y biodegradables.
-                  </p>
-                  <p>
-                    Creemos en la importancia de apoyar a las comunidades locales, por lo que muchos de nuestros productos provienen de pequeños productores comprometidos con la sostenibilidad y el comercio justo. En Tienda Verde, buscamos que cada compra no solo beneficie a nuestros clientes, sino que también contribuya a un futuro más verde y equilibrado.
-                  </p>
-                  <p>
-                    En Tienda Verde, creemos que cada pequeño gesto cuenta. Por eso, ofrecemos una amplia variedad de productos que van desde artículos de uso diario hasta soluciones innovadoras que minimizan el impacto ambiental. Nuestro compromiso no solo es con la calidad y la sostenibilidad de los productos que vendemos, sino también con educar y sensibilizar a nuestros clientes sobre la importancia de tomar decisiones responsables en su consumo. Apostamos por un cambio positivo y accesible para todos, donde cada compra es un paso hacia un estilo de vida más equilibrado con la naturaleza.
-                  </p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
-                </div>
-                <div class="col-md-6 col-12 px-5 my-2">
-                  <h2>NUESTROS LOGROS</h2>
-                  <p>
-                    En Tienda Verde, estamos orgullosos de los pasos que hemos dado para fomentar un consumo más sostenible en nuestra comunidad. A través de nuestra dedicación y compromiso con el medio ambiente, hemos logrado importantes avances que reflejan nuestra misión de ofrecer productos que respetan el planeta y promueven un estilo de vida ecológico. Estos son algunos de nuestros principales logros:
-                  </p>
-                    <ol class="list-group list-group-numbered">
-                      <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Más de 1,000 productos ecológicos disponibles</div>
-                          Hemos reunido una selección de más de 1,000 productos sostenibles, incluyendo artículos de higiene personal, limpieza del hogar y alimentos orgánicos, para brindar opciones conscientes a nuestros clientes.
-                        </div>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Reducción del 30% en envases plásticos</div>
-                          A través de nuestras iniciativas de empaques sostenibles y productos a granel, hemos logrado reducir el uso de plásticos en nuestras operaciones en un 30%, promoviendo la reutilización y reducción de desechos.
-                        </div>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Colaboración con 50 productores locales</div>
-                          Trabajamos de la mano con más de 50 productores y artesanos locales que comparten nuestra visión de sostenibilidad, impulsando la economía local y ofreciendo productos de alta calidad y bajo impacto ambiental.
-                        </div>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Iniciativa de reciclaje en tienda</div>
-                          Implementamos un programa de reciclaje en nuestra tienda, permitiendo a los clientes devolver envases y materiales que luego reciclamos o reutilizamos, contribuyendo a la reducción de residuos en nuestra comunidad.
-                        </div>
-                      </li>
-                    </ol>
-                </div>
-            </div>
-            <div>
-                <h1 class="text-center my-5">NUESTROS PRODUCTOS DESTACADOS</h1>
-            </div>
-            <div class="row display-center container-fluid justify-content-center mb-4">
-                <div class="col-12 col-md-5 m-2">
-                  <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
-                </div>
-                <div class="col-12 col-md-5 m-2">
-                  <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
-                </div>
-                <div class="col-12 col-md-5 m-2">
-                  <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
-                </div>
-                <div class="col-12 col-md-5 m-2">
-                  <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
-                </div>
-                <div class="col-12 col-md-5 m-2">
-                  <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
-                </div>  
-                
-            </div>
+<body>
+  <div class="w-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1 text-success" href="#" id="select-h">
+          Tienda Verde
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nv ">
+            <a class="nav-link d-inline" href="#" id="select-p">Productos</a>
+            <a class="nav-link d-inline" href="#" id="select-f">Formulario</a>
+          </div>
         </div>
-        <div id="products" class="container-fluid">
-            <div class="container-fluid bg-products d-flex justify-content-center align-items-center">
-              <h1 class="text-light text-center" id="titulo-productos">NUESTROS PRODUCTOS</h1>
-            </div>
-            <div class="row my-4">
-                <div class="col-12 col-sm-5 text">
-                    <h3 class="mb-3">Calidad garantizada en cada producto</h3>
-                    <p>
-                      En Tienda Verde, nos aseguramos de que cada producto que ofrecemos cumpla con los más altos estándares de calidad y sostenibilidad. Todos nuestros artículos están cuidadosamente seleccionados, y provienen de proveedores que comparten nuestra visión de respeto por el medio ambiente y compromiso con la salud de nuestros clientes.
-                    </p>
-                    <p>
-                      <b>
-                        <u>
-                          Cuando eliges Tienda Verde, estás eligiendo productos que cuidan de ti, de tu hogar y del planeta.
-                        </u>
-                      </b>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-7 p-3 row">
-                  
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 col-sm-4 mb-3">
-                    <div class="w-100 rounded border  p-2">
-                      <img src="img/habitacion.jpg" class="w-100" alt="">
-                      <br>
-                      <p><b>Cafe inst. Eco sust.</b></p>
-
-                      <p>Precio: $1.990
-                        <br>
-                        Cantidad: 300gr
-                        <br>
-                        Mini descripcion...
-                      </p>
-                      <div class="d-flex jusz">
-                        <button type="button" class="btn btn-light">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div id="form" class="py-4 mb-4 container-fluid row justify-content-center">
-            <form action="#" class="col-12 col-md-6">
-                <h3 class="bold my-3">Seleccione el tipo de residuo</h3>
-                <div class="form-check">
-                    <input class="form-check-input" value="Plastico" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Plastico
-                    </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" value="Papel" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  >
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Papel
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" value="Vidrio"type="radio" name="flexRadioDefault" id="flexRadioDefault3"  >
-                  <label class="form-check-label" for="flexRadioDefault3">
-                    Vidrio
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" value="Metales" type="radio" name="flexRadioDefault" id="flexRadioDefault4"  >
-                  <label class="form-check-label" for="flexRadioDefault4">
-                    Metales
-                  </label>
-                </div> 
-
-                <div class="form-check">
-                  <input class="form-check-input" value="Electronicos" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Electronicos
-                  </label>
-                </div>
-
-                <h3 id="subtipo" class="bold my-3">Seleccione el subtipo</h3>
-
-
-                <div id="plastico">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Botellas
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Envases
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Bolsas
-                    </label>
-                </div>
-              </div>
-
-                <div id="papel">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Periodicos
-                    </label>
-                    </div>
-                    
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                      <label class="form-check-label" for="flexRadioDefault5">
-                        Carton
-                      </label>
-                    </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                      <label class="form-check-label" for="flexRadioDefault5">
-                        Papel de Oficina
-                      </label>
-                  </div>
-
-                </div>
-                <div id="vidrio">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Botellas
-                    </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Frascos
-
-                  </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                <label class="form-check-label" for="flexRadioDefault5">
-                  Cristaleria
-
-                </label>
-            </div>
-
-                </div>
-                <div id="metales">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Latas
-                    </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Cables
-                  </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                <label class="form-check-label" for="flexRadioDefault5">
-                  Electrodomesticos pequeños
-                </label>
-            </div>
-                </div>
-                <div id="electronicos">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                    <label class="form-check-label" for="flexRadioDefault5">
-                      Telefonos moviles
-                    </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Bateria
-                  </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"  >
-                <label class="form-check-label" for="flexRadioDefault5">
-                  Componentes de computadoras
-                </label>
-            </div>
-                </div>
-                <h3 class="bold my-3">Llene sus datos personales</h3>
-                <div class="container-fluid">
-                  <div class="">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                      <input type="email" class="form-control" id="input-nombre" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Correo</label>
-                      <input type="email" class="form-control" id="input-correo" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Direccion</label>
-                      <input type="email" class="form-control" id="input-direccion" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-floating">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                      <label for="floatingTextarea">Comentarios</label>
-                    </div>
-                  </div>
-              </div>
-              <button type="button" class="btn btn-light" id="btn-enviar">Enviar</button>
-            </form>
-          
+      </div>
+    </nav>
+    <div id="homepage" class="container-fluid">
+      <img src="https://www.pactoglobal-colombia.org/images/jch-optimize/ng/images_NoticiasHome_2023_PORTS__e5e35.webp"
+        class="w-100" alt="">
+      <h1 class="text-center fs-1 my-5">¿QUIÉNES SOMOS NOSOTROS?</h1>
+      <div class="row">
+        <div class="col-md-6 col-12 px-5 my-2">
+          <p>
+            En Tienda Verde, somos una pequeña empresa local apasionada por el cuidado del planeta. Nos dedicamos a
+            ofrecer productos ecológicos y sostenibles que promueven un estilo de vida más consciente y respetuoso con
+            el medio ambiente. Nuestra misión es proporcionar alternativas responsables que ayuden a reducir el impacto
+            ambiental, fomentando el uso de materiales reciclados, orgánicos y biodegradables.
+          </p>
+          <p>
+            Creemos en la importancia de apoyar a las comunidades locales, por lo que muchos de nuestros productos
+            provienen de pequeños productores comprometidos con la sostenibilidad y el comercio justo. En Tienda Verde,
+            buscamos que cada compra no solo beneficie a nuestros clientes, sino que también contribuya a un futuro más
+            verde y equilibrado.
+          </p>
+          <p>
+            En Tienda Verde, creemos que cada pequeño gesto cuenta. Por eso, ofrecemos una amplia variedad de productos
+            que van desde artículos de uso diario hasta soluciones innovadoras que minimizan el impacto ambiental.
+            Nuestro compromiso no solo es con la calidad y la sostenibilidad de los productos que vendemos, sino también
+            con educar y sensibilizar a nuestros clientes sobre la importancia de tomar decisiones responsables en su
+            consumo. Apostamos por un cambio positivo y accesible para todos, donde cada compra es un paso hacia un
+            estilo de vida más equilibrado con la naturaleza.
+          </p>
 
         </div>
-        <footer>
-            <div
-              class="container-fluid w-100 bg-footer text-center py-4"
-            >
-                <a href=""><img src="img/facebook-icon.svg" alt="" srcset="" class="redes-icon"></a><a href=""><img src="img/instagram-icon.svg" alt="" srcset="" class="redes-icon"></a><a href=""><img src="img/twitter-icon.svg" alt="" srcset="" class="redes-icon"></a><a href="">CORREO</a>
-                <p class="mb-0 text-light">Facebook | Instagram | Twitter | Correo</p>
-            </div>
-            <div class="bg-success .bg-gradient py-4">
-              <p class="mb-0 text-center bold text-light">
-                Cada compra es una oportunidad para cuidar nuestro planeta. Gracias por ser parte del cambio.
-              </p>
-            </div>
-             
-        </footer>
+        <div class="col-md-6 col-12 px-5 my-2">
+          <h2>NUESTROS LOGROS</h2>
+          <p>
+            En Tienda Verde, estamos orgullosos de los pasos que hemos dado para fomentar un consumo más sostenible en
+            nuestra comunidad. A través de nuestra dedicación y compromiso con el medio ambiente, hemos logrado
+            importantes avances que reflejan nuestra misión de ofrecer productos que respetan el planeta y promueven un
+            estilo de vida ecológico. Estos son algunos de nuestros principales logros:
+          </p>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Más de 1,000 productos ecológicos disponibles</div>
+                Hemos reunido una selección de más de 1,000 productos sostenibles, incluyendo artículos de higiene
+                personal, limpieza del hogar y alimentos orgánicos, para brindar opciones conscientes a nuestros
+                clientes.
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Reducción del 30% en envases plásticos</div>
+                A través de nuestras iniciativas de empaques sostenibles y productos a granel, hemos logrado reducir el
+                uso de plásticos en nuestras operaciones en un 30%, promoviendo la reutilización y reducción de
+                desechos.
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Colaboración con 50 productores locales</div>
+                Trabajamos de la mano con más de 50 productores y artesanos locales que comparten nuestra visión de
+                sostenibilidad, impulsando la economía local y ofreciendo productos de alta calidad y bajo impacto
+                ambiental.
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Iniciativa de reciclaje en tienda</div>
+                Implementamos un programa de reciclaje en nuestra tienda, permitiendo a los clientes devolver envases y
+                materiales que luego reciclamos o reutilizamos, contribuyendo a la reducción de residuos en nuestra
+                comunidad.
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-center my-5">NUESTROS PRODUCTOS DESTACADOS</h1>
+      </div>
+      <div class="row display-center container-fluid justify-content-center mb-4">
+        <div class="col-12 col-md-5 m-2">
+          <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-5 m-2">
+          <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-5 m-2">
+          <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-5 m-2">
+          <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-5 m-2">
+          <img src="img/110ec7_06cb34b5a2f246b6a5c88c0674390f25~mv2.webp" alt="" class="w-100">
+        </div>
+
+      </div>
     </div>
+    <div id="products" class="container-fluid">
+      <div class="container-fluid bg-products d-flex justify-content-center align-items-center">
+        <h1 class="text-light text-center" id="titulo-productos">NUESTROS PRODUCTOS</h1>
+      </div>
+      <div class="row my-4">
+        <div class="col-12 col-sm-5 text">
+          <h3 class="mb-3">Calidad garantizada en cada producto</h3>
+          <p>
+            En Tienda Verde, nos aseguramos de que cada producto que ofrecemos cumpla con los más altos estándares de
+            calidad y sostenibilidad. Todos nuestros artículos están cuidadosamente seleccionados, y provienen de
+            proveedores que comparten nuestra visión de respeto por el medio ambiente y compromiso con la salud de
+            nuestros clientes.
+          </p>
+          <p>
+            <b>
+              <u>
+                Cuando eliges Tienda Verde, estás eligiendo productos que cuidan de ti, de tu hogar y del planeta.
+              </u>
+            </b>
+          </p>
+        </div>
+        <div class="col-12 col-sm-7 p-3 row">
 
-    <script src="js/javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-sm-4 mb-3">
+            <div class="w-100 rounded border  p-2">
+              <img src="img/habitacion.jpg" class="w-100" alt="">
+              <br>
+              <p><b>Cafe inst. Eco sust.</b></p>
+
+              <p>Precio: $1.990
+                <br>
+                Cantidad: 300gr
+                <br>
+                Mini descripcion...
+              </p>
+              <div class="d-flex jusz">
+                <button type="button" class="btn btn-light">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="form" class="py-4 mb-4 container-fluid row justify-content-center">
+      <form action="#" class="col-12 col-md-6">
+        <h3 class="bold my-3">Seleccione el tipo de residuo</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Plastico
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Papel
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Vidrio
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+          <label class="form-check-label" for="flexRadioDefault4">
+            Metales
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" value="Electronicos" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5">
+          <label class="form-check-label" for="flexRadioDefault5">
+            Electronicos
+          </label>
+        </div>
+      </form>
+      <h3 id="subtipo" class="bold my-3 text-center">Seleccione el subtipo</h3>
+
+      <form class="">
+        <div id="plastico" class="col-12 col-md-6 m-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Botellas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Envases
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Bolsas
+            </label>
+          </div>
+        </div>
+
+        <div id="papel" class="col-12 col-md-6 m-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Periodicos
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Carton
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Papel de Oficina
+            </label>
+          </div>
+
+        </div>
+        <div id="vidrio" class="col-12 col-md-6 m-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Botellas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Frascos
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Cristaleria
+
+            </label>
+          </div>
+
+        </div>
+        <div id="metales" class="col-12 col-md-6 m-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Latas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Cables
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Electrodomesticos pequeños
+            </label>
+          </div>
+        </div>
+        <div id="electronicos" class="col-12 col-md-6 m-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Telefonos moviles
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Bateria
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Componentes de computadoras
+            </label>
+          </div>
+        </div>
+      </form>
+      <h3 class="bold my-3 text-center">Llene sus datos personales</h3>
+      <div class="container-fluid justify-content-centerb col-12 col-md-6 ">
+        <div class="">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="input-nombre" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="input-correo" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Direccion</label>
+            <input type="email" class="form-control" id="input-direccion" aria-describedby="emailHelp">
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comentarios</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-light" id="btn-enviar">Enviar</button>
+      </div>
+      </form>
+
+
+    </div>
+    <footer>
+      <div class="container-fluid w-100 bg-footer text-center py-4">
+        <a href=""><img src="img/facebook-icon.svg" alt="" srcset="" class="redes-icon"></a><a href=""><img
+            src="img/instagram-icon.svg" alt="" srcset="" class="redes-icon"></a><a href=""><img
+            src="img/twitter-icon.svg" alt="" srcset="" class="redes-icon"></a><a href="">CORREO</a>
+        <p class="mb-0 text-light">Facebook | Instagram | Twitter | Correo</p>
+      </div>
+      <div class="bg-success .bg-gradient py-4">
+        <p class="mb-0 text-center bold text-light">
+          Cada compra es una oportunidad para cuidar nuestro planeta. Gracias por ser parte del cambio.
+        </p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="js/javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
